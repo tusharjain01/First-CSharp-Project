@@ -45,12 +45,14 @@ namespace application
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+            
+            dataGridView1.Rows.Clear();
             int i = 0;
             if(int.TryParse(textBox3.Text, out i))
             {
                 errorProvider1.SetError(textBox3, "");
                 SqlConnection con = new SqlConnection(connextionString);
-                string query = "SELECT productQuantityLeft from productDetails where productId = " + recievedKey3;
+                string query = "SELECT * from productDetails where productId = " + recievedKey3;
                 con.Open();
                 SqlCommand cmd = new SqlCommand(query, con);
                 var reader = cmd.ExecuteReader();
@@ -66,6 +68,8 @@ namespace application
                     textBox4.Text = (quantityWant * unitPrice).ToString();
                     quantityLeft = quantity - quantityWant;
                     button2.Enabled = true;
+                    
+                    dataGridView1.Rows.Add(reader["productName"], reader["productPrice"], textBox3.Text, textBox4.Text);
                 }
                 else
                 {
