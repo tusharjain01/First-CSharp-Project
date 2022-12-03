@@ -126,19 +126,18 @@ namespace application
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int pid = recievedKey3;
-            int cid = Convert.ToInt32(comboBox1.SelectedIndex.ToString());
-            int price = Convert.ToInt32(textBox4.Text);
+            string pid = recievedKey3.ToString();
+            string cid = comboBox1.GetItemText(comboBox1.SelectedItem);
+            //MessageBox.Show(pid + " " + cid);
+            string price = textBox4.Text;
             SqlConnection con = new SqlConnection(connextionString);
-            string query1 = "INSERT INTO relation(custID,productId,pricePaid) values ('" + cid + "','" + pid + "','" + price + "')";
-            string query2 = "UPDATE productDetails SET productQuantityLeft = '" + quantityLeft + "' where productId = " + recievedKey3;
-            //SqlCommand cmd = new SqlCommand(query1, con);
-            SqlCommand cmd = new SqlCommand(query2 + query1, con);
+            string query = "INSERT INTO relation(productID,cust,pricePaid) values ('" + pid + "','" + cid + "','"+price+"')";
+            string query2 = "UPDATE productDetails SET productQuantityLeft = '" + quantityLeft + "' where productId = '" + pid + "'";
+            SqlCommand cmd = new SqlCommand(query + query2, con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-
-            MessageBox.Show("Thanks For purchasing");
+            MessageBox.Show("Thanks for purchasing !!");;
 
         }
     }
