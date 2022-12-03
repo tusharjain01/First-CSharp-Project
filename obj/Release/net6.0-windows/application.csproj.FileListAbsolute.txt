@@ -1,0 +1,9 @@
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.csproj.AssemblyReference.cache
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.Form1.resources
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.Form2.resources
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.Form3.resources
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.csproj.GenerateResource.cache
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.AssemblyInfoInputs.cache
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.AssemblyInfo.cs
+C:\Users\tusha\OneDrive\Desktop\Experiment\application\application\obj\Release\net6.0-windows\application.csproj.CoreCompileInputs.cache

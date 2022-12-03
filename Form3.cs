@@ -45,7 +45,6 @@ namespace application
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
             dataGridView1.Rows.Clear();
             int i = 0;
             if(int.TryParse(textBox3.Text, out i))
@@ -134,15 +133,19 @@ namespace application
             string cid = comboBox1.GetItemText(comboBox1.SelectedItem);
             //MessageBox.Show(pid + " " + cid);
             string price = textBox4.Text;
+            DateTime time = DateTime.Now;              // Use current time
+            string format = "yyyy-MM-dd HH:mm:ss";    // modify the format depending upon input required in the column in database 
             SqlConnection con = new SqlConnection(connextionString);
-            string query = "INSERT INTO relation(productID,cust,pricePaid) values ('" + pid + "','" + cid + "','"+price+"')";
+            string query = "INSERT INTO relation(productID,cust,pricePaid,Time) values ('" + pid + "','" + cid + "','" + price + "' ,'"+ time.ToString(format) + "')";
             string query2 = "UPDATE productDetails SET productQuantityLeft = '" + quantityLeft + "' where productId = '" + pid + "'";
             SqlCommand cmd = new SqlCommand(query + query2, con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Thanks for purchasing !!");;
+            MessageBox.Show("Thanks for purchasing !!");
 
         }
+
+        
     }
 }
