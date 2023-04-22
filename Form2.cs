@@ -15,7 +15,7 @@ namespace application
 
     public partial class Form2 : Form
     {
-        string connextionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\tusha\\OneDrive\\Desktop\\Experiment\\application\\application\\bin\\Debug\\net6.0-windows\\Database1.mdf;Integrated Security=True";
+        string connextionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+Application.StartupPath+"Database1.mdf;Integrated Security=True;Connect Timeout=30;Integrated Security=True";
         public int recievedKey1;
         public Form2()
         {

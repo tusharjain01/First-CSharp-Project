@@ -1,0 +1,11 @@
+C:\Users\tusha\OneDrive\Desktop\application.exe
+C:\Users\tusha\OneDrive\Desktop\application.dll
+C:\Users\tusha\OneDrive\Desktop\application.deps.json
+C:\Users\tusha\OneDrive\Desktop\application.runtimeconfig.json
+C:\Users\tusha\OneDrive\Desktop\application.pdb
+C:\Users\tusha\OneDrive\Desktop\System.Data.SqlClient.dll
+C:\Users\tusha\OneDrive\Desktop\runtimes\win-arm64\native\sni.dll
+C:\Users\tusha\OneDrive\Desktop\runtimes\win-x64\native\sni.dll
+C:\Users\tusha\OneDrive\Desktop\runtimes\win-x86\native\sni.dll
+C:\Users\tusha\OneDrive\Desktop\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\tusha\OneDrive\Desktop\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

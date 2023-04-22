@@ -4,7 +4,7 @@ namespace application
 {
     public partial class Form1 : Form
     {
-        string connextionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\tusha\\OneDrive\\Desktop\\Experiment\\application\\application\\bin\\Debug\\net6.0-windows\\Database1.mdf;Integrated Security=True";
+        string connextionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+Application.StartupPath+"Database1.mdf;Integrated Security=True;Connect Timeout=30";
         public int passingKey12;
         public Form1()
         {
